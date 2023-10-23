@@ -1007,7 +1007,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 30
 	quality = DRINK_GOOD
 	taste_description = "refreshing mint"
-	glass_icon = 'icons/obj/cocktails_1.dmi'
 	glass_icon_state = "mojito"
 	glass_name = "Mojito"
 	glass_desc = "A drink that looks as refreshing as it tastes."
