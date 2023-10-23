@@ -154,18 +154,10 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	//shot_glass_icon_state = "shotglassbrown"
 
 /datum/reagent/consumable/ethanol/whiskey/whiskey_shot
-	name = "Glass of whiskey"
-	glass_icon = 'icons/obj/cocktails_1.dmi'
-	glass_icon_state = "whiskey"
-	glass_name = "glass of whiskey"
-	glass_desc = "The shot contain whiskey"
-
-/datum/reagent/consumable/ethanol/whiskey/whiskey_shot
 	name = "aged whiskey"
 	glass_icon_state = "whiskey"
 	glass_name = "glass of whiskey"
 	glass_desc = "The shot contain whiskey"
-	empty_glass_icon_state = "whiskey_shot"
 
 /datum/reagent/consumable/ethanol/whiskey/kong
 	name = "Kong"
@@ -319,13 +311,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_name = "glass of wine"
 	glass_desc = "The glass contain wine"
 
-/datum/reagent/consumable/ethanol/wine/wine_glass
-	name = "Glass of wine"
-	glass_icon = 'icons/obj/cocktails_1.dmi'
-	glass_icon_state = "wine"
-	glass_name = "glass of wine"
-	glass_desc = "The glass contain wine"
-
 /datum/reagent/consumable/ethanol/wine/on_merge(data)
 	. = ..()
 	if(src.data && data && data["vintage"] != src.data["vintage"])
@@ -393,13 +378,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/absinthe/absinthe_glass
 	name = "aromatic absinthe"
-	glass_icon_state = "abcent"
-	glass_name = "glass of absinthe"
-	glass_desc = "The glass contain absinthe"
-
-/datum/reagent/consumable/ethanol/absinthe/absinthe_glass
-	name = "Glass of absinthe"
-	glass_icon = 'icons/obj/cocktails_1.dmi'
 	glass_icon_state = "abcent"
 	glass_name = "glass of absinthe"
 	glass_desc = "The glass contain absinthe"
@@ -1263,5 +1241,3 @@ All effects don't start immediately, but rather get worse over time; the rate is
 /datum/reagent/consumable/ethanol/pruno/on_mob_life(mob/living/carbon/M)
 	M.adjust_disgust(5)
 	..()
-
-
